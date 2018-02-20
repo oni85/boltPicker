@@ -165,7 +165,18 @@ document.getElementById('resetBtn').addEventListener('click', function reset() {
   //console.log(e.selectedIndex);
   //e.selectedIndex = 0;
   //e.value(0);
-  document.getElementById('boltDiametr').value = document.getElementById('boltDiametr').value(0);
+  document.getElementById('boltDiametr').options[0].selected = true;
+  document.getElementById('strenghtClass').options[0].selected = true;
+  document.getElementById('accuracyClass').options[0].selected = true;
+  document.getElementById('steelOfTheElements').options[0].selected = true;
+  document.getElementById('nS').options[0].selected = true;
+  document.getElementById('tMin').value = '10';
+  document.getElementById('gammaBs').value = '0.9';
+  document.getElementById('gammaBp').value = '';
+  document.getElementById('gammaBc').value = '0.9';
+  document.getElementById('aIn').value = '';
+  document.getElementById('sIn').value = '';
+  document.getElementById('dIn').value = '';
 }
   /*let e = document.getElementById('boltDiametr');
   let value = e.options[e.selectedIndex].value;
