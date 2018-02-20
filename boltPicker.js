@@ -146,8 +146,8 @@ function nbpCalculation() {
   let nbpResult = Math.floor((rBp * dBcase * (tMin / 10) * gammaBp * gammaBc) * 10)/10;
   document.getElementById('nBp').textContent = nbpResult;
 }
-//----------NBT CALCULATION FUNCTION-------------------//
 
+//----------NBT CALCULATION FUNCTION-------------------//
 function nbtCalculation() {
   let nbtResult = Math.floor((rBtcase * aBsCase * gammaBc) * 10)/10;
   document.getElementById('nBt').textContent = nbtResult;
@@ -157,4 +157,23 @@ nbsCalculation();
 nbpCalculation();
 nbtCalculation();
 }
+);
+
+//----------CLICK ON CANCEL BUTTON-------------------//
+document.getElementById('resetBtn').addEventListener('click', function reset() {
+  //let e = document.getElementById('boltDiametr');
+  //console.log(e.selectedIndex);
+  //e.selectedIndex = 0;
+  //e.value(0);
+  document.getElementById('boltDiametr').value = document.getElementById('boltDiametr').value(0);
+}
+  /*let e = document.getElementById('boltDiametr');
+  let value = e.options[e.selectedIndex].value;
+  let text = e.options[e.selectedIndex].text;
+  console.log(e.selectedIndex);
+  console.log(e);
+  console.log(value);
+  console.log(text);
+}
+*/
 );
