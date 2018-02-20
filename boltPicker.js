@@ -161,10 +161,6 @@ nbtCalculation();
 
 //----------CLICK ON CANCEL BUTTON-------------------//
 document.getElementById('resetBtn').addEventListener('click', function reset() {
-  //let e = document.getElementById('boltDiametr');
-  //console.log(e.selectedIndex);
-  //e.selectedIndex = 0;
-  //e.value(0);
   document.getElementById('boltDiametr').options[0].selected = true;
   document.getElementById('strenghtClass').options[0].selected = true;
   document.getElementById('accuracyClass').options[0].selected = true;
@@ -172,19 +168,13 @@ document.getElementById('resetBtn').addEventListener('click', function reset() {
   document.getElementById('nS').options[0].selected = true;
   document.getElementById('tMin').value = '10';
   document.getElementById('gammaBs').value = '0.9';
-  document.getElementById('gammaBp').value = '';
+  document.getElementById('gammaBp').textContent = '';
   document.getElementById('gammaBc').value = '0.9';
   document.getElementById('aIn').value = '';
   document.getElementById('sIn').value = '';
   document.getElementById('dIn').value = '';
+  document.getElementById('nBs').textContent = '';
+  document.getElementById('nBp').textContent = '';
+  document.getElementById('nBt').textContent = '';
 }
-  /*let e = document.getElementById('boltDiametr');
-  let value = e.options[e.selectedIndex].value;
-  let text = e.options[e.selectedIndex].text;
-  console.log(e.selectedIndex);
-  console.log(e);
-  console.log(value);
-  console.log(text);
-}
-*/
 );
